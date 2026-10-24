@@ -23,8 +23,8 @@ The two entries can be installed independently. Each install is pinned to the Gi
 ## Install without Discover
 
 ```powershell
-dsh plugin --profile web add github:nwasvsad/dsh-task-plan#6055a4ce0d6fc188c70a1506550d8966ee1af54f
-dsh plugin --profile web add github:nwasvsad/dsh-task-digest#a402c0012e0575bc968be21ecb04edb0e564adea
+dsh plugin --profile web add github:nwasvsad/dsh-task-plan#5aff154f86da1f05b910b07ae803ca11ba0a1be0
+dsh plugin --profile web add github:nwasvsad/dsh-task-digest#5eefb2b08c7a55dc896ab39205e6a8170a3d61e7
 ```
 
 Both packages declare `dsh.bundle.patch` and `engines.dsh = ">=0.2.1-rc.2 <0.3.0"`. Git installs run `prepare` to rebuild the browser bundle; approve the build if pnpm asks.
