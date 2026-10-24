@@ -80,11 +80,11 @@
       "versions": [
         {
           "version": "0.2.0",
-          "publishTimestamp": 1792822290,
+          "publishTimestamp": 1792822499,
           "source": {
             "type": "git",
             "url": "https://github.com/nwasvsad/dsh-task-plan.git",
-            "commit": "5aff154f86da1f05b910b07ae803ca11ba0a1be0"
+            "commit": "dde34a229a81f4eed88f15291aea1266989d2e00"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.2 <0.3.0"
@@ -127,11 +127,11 @@
       "versions": [
         {
           "version": "0.1.0",
-          "publishTimestamp": 1792822290,
+          "publishTimestamp": 1792822499,
           "source": {
             "type": "git",
             "url": "https://github.com/nwasvsad/dsh-task-digest.git",
-            "commit": "5eefb2b08c7a55dc896ab39205e6a8170a3d61e7"
+            "commit": "ced4d58ecc586749426b833b372594dc33abe511"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.2 <0.3.0"
