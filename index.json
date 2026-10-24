@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "title": {
+    "en": "nwasvsad DSH plugins",
+    "zh": "nwasvsad 的 DSH 插件"
+  },
+  "description": {
+    "en": "Off-peak task planning and a nightly per-task token/cost digest for DeepSeek Harness.",
+    "zh": "DeepSeek Harness 的谷值任务计划表，以及每晚逐任务 token/金额日报。"
+  },
+  "metadata": {
+    "categories": {
+      "automation": {
+        "title": {
+          "en": "Automation",
+          "zh": "自动化"
+        }
+      },
+      "observability": {
+        "title": {
+          "en": "Observability",
+          "zh": "可观测性"
+        }
+      }
+    },
+    "labels": {
+      "tasks": {
+        "title": {
+          "en": "Tasks",
+          "zh": "任务"
+        }
+      },
+      "digest": {
+        "title": {
+          "en": "Digest",
+          "zh": "日报"
+        }
+      },
+      "tokens": {
+        "title": {
+          "en": "Tokens & cost",
+          "zh": "Token 与金额"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-task-plan",
+      "title": {
+        "en": "Task plan",
+        "zh": "任务计划"
+      },
+      "description": {
+        "en": "Write tasks during the day; at the off-peak time the plugin runs each pending task as its own concurrent Session and records tokens, cost, duration, and result.",
+        "zh": "白天填写任务；到谷值时段自动为每个待执行任务新建独立 Session 并发执行，并记录 token、金额、耗时和结果。"
+      },
+      "icon": "./icons/task-plan.svg",
+      "author": "nwasvsad",
+      "homepage": "https://github.com/nwasvsad/dsh-task-plan#readme",
+      "repository": {
+        "url": "https://github.com/nwasvsad/dsh-task-plan"
+      },
+      "metadata": {
+        "category": "automation",
+        "keywords": [
+          "task",
+          "plan",
+          "schedule",
+          "off-peak",
+          "session",
+          "automation"
+        ],
+        "labels": [
+          "tasks"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.2.0",
+          "publishTimestamp": 1792822048,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/nwasvsad/dsh-task-plan.git",
+            "commit": "6055a4ce0d6fc188c70a1506550d8966ee1af54f"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.3.0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-task-digest",
+      "title": {
+        "en": "Daily digest",
+        "zh": "每日总结"
+      },
+      "description": {
+        "en": "At 00:05, summarise the previous day's Sessions per task: tokens, cost, kind, result, and follow-up suggestions. Independent of the task-plan package.",
+        "zh": "每天 00:05 对前一天执行过的 Session 逐任务总结：token、金额、类型、结果和后续建议；不依赖任务计划包。"
+      },
+      "icon": "./icons/task-digest.svg",
+      "author": "nwasvsad",
+      "homepage": "https://github.com/nwasvsad/dsh-task-digest#readme",
+      "repository": {
+        "url": "https://github.com/nwasvsad/dsh-task-digest"
+      },
+      "metadata": {
+        "category": "observability",
+        "keywords": [
+          "digest",
+          "report",
+          "token",
+          "cost",
+          "session",
+          "observability"
+        ],
+        "labels": [
+          "digest",
+          "tokens"
+        ],
+        "sortKeys": {}
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1792822048,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/nwasvsad/dsh-task-digest.git",
+            "commit": "a402c0012e0575bc968be21ecb04edb0e564adea"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}
